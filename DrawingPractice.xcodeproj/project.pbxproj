@@ -11,6 +11,14 @@
 		23DD38C329A575740037FEF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD38C229A575740037FEF3 /* ContentView.swift */; };
 		23DD38C529A575750037FEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DD38C429A575750037FEF3 /* Assets.xcassets */; };
 		23DD38C929A575750037FEF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DD38C829A575750037FEF3 /* Preview Assets.xcassets */; };
+		23DD38D129A575E90037FEF3 /* LineModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD38D029A575E90037FEF3 /* LineModel1.swift */; };
+		23DD38D329A5762E0037FEF3 /* ColorPicker1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD38D229A5762E0037FEF3 /* ColorPicker1.swift */; };
+		23DD38D529A576F50037FEF3 /* DrawingView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD38D429A576F50037FEF3 /* DrawingView1.swift */; };
+		23FCF5C429A6482A003881B4 /* DrawingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5C329A6482A003881B4 /* DrawingView2.swift */; };
+		23FCF5C629A64883003881B4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5C529A64883003881B4 /* Home.swift */; };
+		23FCF5C929A64B2E003881B4 /* ChatGPTDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5C829A64B2E003881B4 /* ChatGPTDrawingView.swift */; };
+		23FCF5CB29A64CFD003881B4 /* DrawingView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5CA29A64CFD003881B4 /* DrawingView3.swift */; };
+		23FCF5CD29A64D9D003881B4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5CC29A64D9D003881B4 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		23DD38C429A575750037FEF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23DD38C629A575750037FEF3 /* DrawingPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrawingPractice.entitlements; sourceTree = "<group>"; };
 		23DD38C829A575750037FEF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23DD38D029A575E90037FEF3 /* LineModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineModel1.swift; sourceTree = "<group>"; };
+		23DD38D229A5762E0037FEF3 /* ColorPicker1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker1.swift; sourceTree = "<group>"; };
+		23DD38D429A576F50037FEF3 /* DrawingView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView1.swift; sourceTree = "<group>"; };
+		23FCF5C329A6482A003881B4 /* DrawingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView2.swift; sourceTree = "<group>"; };
+		23FCF5C529A64883003881B4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		23FCF5C829A64B2E003881B4 /* ChatGPTDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTDrawingView.swift; sourceTree = "<group>"; };
+		23FCF5CA29A64CFD003881B4 /* DrawingView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView3.swift; sourceTree = "<group>"; };
+		23FCF5CC29A64D9D003881B4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,9 @@
 			children = (
 				23DD38C029A575740037FEF3 /* DrawingPracticeApp.swift */,
 				23DD38C229A575740037FEF3 /* ContentView.swift */,
+				23DD38CF29A575D80037FEF3 /* Practice-1 */,
+				23FCF5C229A6480C003881B4 /* Practice-2 */,
+				23FCF5C729A64B18003881B4 /* Practice-3 */,
 				23DD38C429A575750037FEF3 /* Assets.xcassets */,
 				23DD38C629A575750037FEF3 /* DrawingPractice.entitlements */,
 				23DD38C729A575750037FEF3 /* Preview Content */,
@@ -67,6 +86,35 @@
 				23DD38C829A575750037FEF3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23DD38CF29A575D80037FEF3 /* Practice-1 */ = {
+			isa = PBXGroup;
+			children = (
+				23DD38D029A575E90037FEF3 /* LineModel1.swift */,
+				23DD38D229A5762E0037FEF3 /* ColorPicker1.swift */,
+				23DD38D429A576F50037FEF3 /* DrawingView1.swift */,
+			);
+			path = "Practice-1";
+			sourceTree = "<group>";
+		};
+		23FCF5C229A6480C003881B4 /* Practice-2 */ = {
+			isa = PBXGroup;
+			children = (
+				23FCF5C329A6482A003881B4 /* DrawingView2.swift */,
+				23FCF5C529A64883003881B4 /* Home.swift */,
+			);
+			path = "Practice-2";
+			sourceTree = "<group>";
+		};
+		23FCF5C729A64B18003881B4 /* Practice-3 */ = {
+			isa = PBXGroup;
+			children = (
+				23FCF5C829A64B2E003881B4 /* ChatGPTDrawingView.swift */,
+				23FCF5CA29A64CFD003881B4 /* DrawingView3.swift */,
+				23FCF5CC29A64D9D003881B4 /* MainView.swift */,
+			);
+			path = "Practice-3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +188,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DD38C329A575740037FEF3 /* ContentView.swift in Sources */,
+				23DD38D129A575E90037FEF3 /* LineModel1.swift in Sources */,
+				23FCF5C429A6482A003881B4 /* DrawingView2.swift in Sources */,
+				23FCF5CD29A64D9D003881B4 /* MainView.swift in Sources */,
 				23DD38C129A575740037FEF3 /* DrawingPracticeApp.swift in Sources */,
+				23DD38D529A576F50037FEF3 /* DrawingView1.swift in Sources */,
+				23FCF5C929A64B2E003881B4 /* ChatGPTDrawingView.swift in Sources */,
+				23DD38D329A5762E0037FEF3 /* ColorPicker1.swift in Sources */,
+				23FCF5C629A64883003881B4 /* Home.swift in Sources */,
+				23FCF5CB29A64CFD003881B4 /* DrawingView3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
