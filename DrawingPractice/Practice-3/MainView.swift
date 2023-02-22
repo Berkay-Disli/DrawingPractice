@@ -14,6 +14,8 @@ struct MainView: View {
     @State var dragged = CGSize.zero
     @State private var accumulated = CGSize.zero
     
+    @State private var added = false
+    
     var magnify: some Gesture {
         MagnificationGesture()
             .onChanged { progressingScale = $0 }
@@ -44,16 +46,50 @@ struct MainView: View {
                         .ignoresSafeArea()
                     
                     VStack {
-                        Text("Practice")
-                            .font(.system(size: 22))
-                            .fontWeight(.medium)
-                            .foregroundColor(.black)
-                            .padding()
-                            .background {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.black, lineWidth: 4)
+                        VStack {
+                            HStack(spacing: 0) {
+                                Text("Practice")
+                                    .font(.system(size: 22))
+                                    .fontWeight(.medium)
+                                    .foregroundColor(.black)
+                                    .padding()
+                                    .background {
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(.black, lineWidth: 4)
+                                    }
+                                    .onTapGesture {
+                                        added.toggle()
+                                    }
+                                
+                                if added {
+                                    HStack(spacing: 0) {
+                                        Rectangle()
+                                            .fill(.black)
+                                            .frame(width: 50, height: 4)
+                                        
+                                        Text("Practice 2")
+                                            .font(.system(size: 22))
+                                            .fontWeight(.medium)
+                                            .foregroundColor(.black)
+                                            .padding()
+                                            .background {
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .stroke(.black, lineWidth: 4)
+                                            }
+                                    }
+                                    .transition(.opacity.animation(.easeInOut))
+                                    
+                                    
+                                }
+                                
                             }
+                        }
+                        
+                        
                     }
+                    //.frame(width: size.width, height: size.height)
+                    .padding()
+                    .border(.orange, width: 4)
                     .scaleEffect(self.magScale * progressingScale)
                     .offset(x: dragged.width, y: dragged.height)
                     
