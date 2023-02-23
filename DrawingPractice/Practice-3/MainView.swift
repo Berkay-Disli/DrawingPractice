@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct MainView: View {
+    // MARK: Gestures
     @GestureState var magnifyBy = 1.0
     @State var magScale: CGFloat = 1
     @State var progressingScale: CGFloat = 1
     @State var dragged = CGSize.zero
     @State private var accumulated = CGSize.zero
-    
-    @State private var added = false
-    
     var magnify: some Gesture {
         MagnificationGesture()
             .onChanged { progressingScale = $0 }
@@ -24,7 +22,6 @@ struct MainView: View {
                 progressingScale = 1
             }
     }
-    
     var drag: some Gesture {
         DragGesture()
             .onChanged{ value in
@@ -36,10 +33,23 @@ struct MainView: View {
             }
     }
     
+    // A new node
+    @State private var added = false
+    @State private var nodes: [NodeItem] = [
+        .init(name: "Parent", bgFilled: true, bgColor: .blue, childNodes: [
+            .init(name: "Child-1", bgFilled: false, bgColor: .pink, childNodes: [
+                .init(name: "GrandChild-1", bgFilled: true, bgColor: .orange, childNodes: []), .init(name: "GrandChild-2", bgFilled: true, bgColor: .cyan, childNodes: [])]),
+            .init(name: "Child-2", bgFilled: false, bgColor: .pink, childNodes: [
+                .init(name: "GrandChild-3", bgFilled: true, bgColor: .green, childNodes: []),
+                .init(name: "GrandChild-4", bgFilled: false, bgColor: .teal, childNodes: [])])])
+    ]
+    
+    
+    
     var body: some View {
         NavigationView {
             GeometryReader { proxy in
-                let size = proxy.size
+                //let size = proxy.size
                 
                 ZStack {
                     Color.pink.opacity(0.1)
@@ -129,4 +139,12 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
     }
+}
+
+struct NodeItem: Identifiable {
+    let id = UUID().uuidString
+    let name: String
+    let bgFilled: Bool
+    let bgColor: Color
+    var childNodes: [NodeItem]
 }

@@ -14,6 +14,7 @@
 		23DD38D129A575E90037FEF3 /* LineModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD38D029A575E90037FEF3 /* LineModel1.swift */; };
 		23DD38D329A5762E0037FEF3 /* ColorPicker1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD38D229A5762E0037FEF3 /* ColorPicker1.swift */; };
 		23DD38D529A576F50037FEF3 /* DrawingView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD38D429A576F50037FEF3 /* DrawingView1.swift */; };
+		23E34AB529A824BB007110CF /* ChatGptFlowChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E34AB429A824BB007110CF /* ChatGptFlowChart.swift */; };
 		23FCF5C429A6482A003881B4 /* DrawingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5C329A6482A003881B4 /* DrawingView2.swift */; };
 		23FCF5C629A64883003881B4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5C529A64883003881B4 /* Home.swift */; };
 		23FCF5C929A64B2E003881B4 /* ChatGPTDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCF5C829A64B2E003881B4 /* ChatGPTDrawingView.swift */; };
@@ -31,6 +32,7 @@
 		23DD38D029A575E90037FEF3 /* LineModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineModel1.swift; sourceTree = "<group>"; };
 		23DD38D229A5762E0037FEF3 /* ColorPicker1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker1.swift; sourceTree = "<group>"; };
 		23DD38D429A576F50037FEF3 /* DrawingView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView1.swift; sourceTree = "<group>"; };
+		23E34AB429A824BB007110CF /* ChatGptFlowChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptFlowChart.swift; sourceTree = "<group>"; };
 		23FCF5C329A6482A003881B4 /* DrawingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView2.swift; sourceTree = "<group>"; };
 		23FCF5C529A64883003881B4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		23FCF5C829A64B2E003881B4 /* ChatGPTDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTDrawingView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				23FCF5C829A64B2E003881B4 /* ChatGPTDrawingView.swift */,
 				23FCF5CA29A64CFD003881B4 /* DrawingView3.swift */,
 				23FCF5CC29A64D9D003881B4 /* MainView.swift */,
+				23E34AB429A824BB007110CF /* ChatGptFlowChart.swift */,
 			);
 			path = "Practice-3";
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				23FCF5C429A6482A003881B4 /* DrawingView2.swift in Sources */,
 				23FCF5CD29A64D9D003881B4 /* MainView.swift in Sources */,
 				23DD38C129A575740037FEF3 /* DrawingPracticeApp.swift in Sources */,
+				23E34AB529A824BB007110CF /* ChatGptFlowChart.swift in Sources */,
 				23DD38D529A576F50037FEF3 /* DrawingView1.swift in Sources */,
 				23FCF5C929A64B2E003881B4 /* ChatGPTDrawingView.swift in Sources */,
 				23DD38D329A5762E0037FEF3 /* ColorPicker1.swift in Sources */,
